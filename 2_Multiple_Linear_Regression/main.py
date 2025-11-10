@@ -34,9 +34,6 @@ for epoch in range(epochs):
         print(f'Epoch {epoch}, Loss: {loss}')
 
 y_pred_final = X.dot(w) + b
-X_new = np.array([[4, 2]])  # x1=4, x2=2
-y_new = X_new.dot(w) + b
-print(f"Prediction for x1=4, x2=2 → {y_new[0][0]:.2f}")
 
 X1_range = np.linspace(X1.min(), X1.max(), 100).reshape(-1, 1)
 X2_mean = np.full_like(X1_range, X2.mean())
