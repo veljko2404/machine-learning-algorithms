@@ -1,6 +1,7 @@
 import numpy as np
 from collections import Counter
 import matplotlib.pyplot as plt
+
 np.random.seed(0)
 X = np.random.randn(300, 2)
 y = (X[:, 0] + X[:, 1] > 0).astype(int)
